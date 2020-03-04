@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,OAAO,CAAC,iFAAI;AACZ,OAAO,CAAC,qFAAI;AACZ,AAAA,CAAC,CAAC;EAEA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,IAAI;EAChB,eAAe,EAAE,IAAI;CAAG;;AAE1B,AAAA,IAAI,CAAC;EACH,gBAAgB,ECbL,OAAO;EDclB,WAAW,EAAE,2BAA2B;EACxC,WAAW,EAAE,yBAAyB;EACtC,UAAU,EAAE,MAAM;EAClB,gBAAgB,EAAE,iCAAiC;EACnD,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,SAAS;EAC9B,QAAQ,EAAE,QAAQ;CAAG",
+    "sources": [
+        "../src/styles/index.sass",
+        "../src/styles/_variables.sass"
+    ],
+    "names": [],
+    "file": "index.css"
+}

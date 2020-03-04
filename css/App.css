@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700i&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #012C23;
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  background-image: url("../img/backgroundWoman.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+}
+/*# sourceMappingURL=App.css.map */

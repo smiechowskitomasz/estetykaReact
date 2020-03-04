@@ -1,0 +1,130 @@
+@import 'variables'
+.nav
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  padding: 32px 32px 0 32px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-basis: 100%
+  // background-color: $greenColor
+  z-index: 4
+  &.addNavBcg
+    background-color: $greenColor
+  @media (min-width: 799px)
+    position: relative
+    padding: 0
+    margin: 64px 80px 0 80px
+
+  &__logo
+    flex-grow: 1
+  &__list
+    display: none
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: bold
+    list-style: none
+    background-color: $pinkColor
+    &.activeMenu
+      display: flex
+      flex-direction: column
+      position: absolute
+      top: 92px
+      left: 0
+      right: 0
+      padding: 40px 40px 0 40px
+      font-size: 24px
+      line-height: 58px
+      text-align: left
+
+      background-color: $pinkColor
+      height: auto
+      z-index: 1
+
+    @media ( min-width:  799px)
+      display: flex
+      text-align: center
+      position: relative
+      align-items: center
+      flex-direction: row
+      color: $pinkColor
+      position: relative
+      top: 0
+      height: auto
+      background-color: transparent
+      font-size: 20px
+      line-height: 28px
+
+  &__submenu
+    display: flex
+    flex-direction: column
+    list-style: none
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 58px
+    color: #000000
+    background-color: $pinkColor
+
+    box-shadow: none
+    @media( min-width: 799px  )
+      display: none
+      padding: 40px
+      text-align: left
+      background-color: $pinkColor
+      font-size: 16px
+      line-height: 40px
+      font-weight: bold
+      border: 0
+      box-shadow: 0px 0px 40px #00452A
+
+  &__linkSubmenu
+    color: #000000
+    &:hover
+      color: #654C4A
+      border-bottom: 1px solid red
+  &__submenuItem
+    border-top: 1px solid #EBACA7
+    @media ( min-width: 799px )
+      border-top: 0
+    &:hover
+      border-bottom: 1px solid #654c4a
+
+  &__item
+    margin: 0 20px
+    border-bottom: 1px solid $darkPink
+    @media( min-width: 799px  )
+      border: 0
+
+    &:hover
+      @media( min-width: 799px  )
+        border-bottom: 2px solid $pinkColor
+
+      & .nav__submenu
+        @media( min-width: 799px  )
+          display: block
+          position: absolute
+          top: 30
+          left: 20px
+
+  &__link--resetStyle
+    color: black
+
+    @media ( min-width: 799px )
+      color: $pinkColor
+  &__ourServiceLink
+    order: 1
+    margin-top: 50px
+    @media ( min-width: 799px )
+      order: 0
+      margin-top: 0
+  &--noMobileMenu
+    display: none
+    @media ( min-width: 799px )
+      display: block
+  &--noDesktopMenu
+    @media ( min-width: 799px )
+      display: none

@@ -1,0 +1,218 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 32px 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  z-index: 4;
+}
+
+.nav.addNavBcg {
+  background-color: #012C23;
+}
+
+@media (min-width: 799px) {
+  .nav {
+    position: relative;
+    padding: 0;
+    margin: 64px 80px 0 80px;
+  }
+}
+
+.nav__logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.nav__list {
+  display: none;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  list-style: none;
+  background-color: #FFC5C1;
+}
+
+.nav__list.activeMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 92px;
+  left: 0;
+  right: 0;
+  padding: 40px 40px 0 40px;
+  font-size: 24px;
+  line-height: 58px;
+  text-align: left;
+  background-color: #FFC5C1;
+  height: auto;
+  z-index: 1;
+}
+
+@media (min-width: 799px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: #FFC5C1;
+    position: relative;
+    top: 0;
+    height: auto;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.nav__submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 58px;
+  color: #000000;
+  background-color: #FFC5C1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (min-width: 799px) {
+  .nav__submenu {
+    display: none;
+    padding: 40px;
+    text-align: left;
+    background-color: #FFC5C1;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: bold;
+    border: 0;
+    -webkit-box-shadow: 0px 0px 40px #00452A;
+            box-shadow: 0px 0px 40px #00452A;
+  }
+}
+
+.nav__linkSubmenu {
+  color: #000000;
+}
+
+.nav__linkSubmenu:hover {
+  color: #654C4A;
+  border-bottom: 1px solid red;
+}
+
+.nav__submenuItem {
+  border-top: 1px solid #EBACA7;
+}
+
+@media (min-width: 799px) {
+  .nav__submenuItem {
+    border-top: 0;
+  }
+}
+
+.nav__submenuItem:hover {
+  border-bottom: 1px solid #654c4a;
+}
+
+.nav__item {
+  margin: 0 20px;
+  border-bottom: 1px solid #EBACA7;
+}
+
+@media (min-width: 799px) {
+  .nav__item {
+    border: 0;
+  }
+}
+
+@media (min-width: 799px) {
+  .nav__item:hover {
+    border-bottom: 2px solid #FFC5C1;
+  }
+}
+
+@media (min-width: 799px) {
+  .nav__item:hover .nav__submenu {
+    display: block;
+    position: absolute;
+    top: 30;
+    left: 20px;
+  }
+}
+
+.nav__link--resetStyle {
+  color: black;
+}
+
+@media (min-width: 799px) {
+  .nav__link--resetStyle {
+    color: #FFC5C1;
+  }
+}
+
+.nav__ourServiceLink {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-top: 50px;
+}
+
+@media (min-width: 799px) {
+  .nav__ourServiceLink {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-top: 0;
+  }
+}
+
+.nav--noMobileMenu {
+  display: none;
+}
+
+@media (min-width: 799px) {
+  .nav--noMobileMenu {
+    display: block;
+  }
+}
+
+@media (min-width: 799px) {
+  .nav--noDesktopMenu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Navigation.css.map */
