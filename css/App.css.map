@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AACA,OAAO,CAAC,iFAAI;AACZ,OAAO,CAAC,qFAAI;AACZ,AAAA,CAAC,CAAC;EAEA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,IAAI;EAChB,eAAe,EAAE,IAAI;CAAG;;AAE1B,AAAA,IAAI,CAAC;EACH,gBAAgB,ECZL,OAAO;EDalB,WAAW,EAAE,2BAA2B;EACxC,WAAW,EAAE,yBAAyB;EACtC,UAAU,EAAE,MAAM;EAClB,gBAAgB,EAAE,iCAAiC;EACnD,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,SAAS;EAC9B,QAAQ,EAAE,QAAQ;CAAG",
+    "mappings": "",
     "sources": [
-        "../src/styles/App.sass",
-        "../src/styles/_variables.sass"
+        "../src/styles/App.sass"
     ],
     "names": [],
     "file": "App.css"
